@@ -1,5 +1,5 @@
-## en route
-# AI Travel Itinerary Generator
+# en route
+## AI Travel Itinerary Generator
 
 A Flask-based web application that generates personalized travel itineraries using Google's Gemini AI. The application takes user inputs such as destination, budget, duration, and interests to create comprehensive travel plans with detailed daily activities, accommodation recommendations, and cost breakdowns.
 
