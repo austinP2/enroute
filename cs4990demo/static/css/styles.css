@@ -1,0 +1,268 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Logo styling */
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.logo {
+    font-size: 3.5rem;
+    color: #2c3e50;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-transform: lowercase;
+}
+
+/* Form styling */
+.travel-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Itinerary result section */
+.itinerary-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.itinerary-container h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.itinerary-content {
+    min-height: 200px;
+}
+
+.placeholder-text {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+}
+
+/* Error and loading states */
+.error-text {
+    color: #e74c3c;
+    text-align: center;
+    padding: 1rem;
+    background-color: #fde8e8;
+    border-radius: 6px;
+    margin: 1rem 0;
+}
+
+.loading-text {
+    color: #3498db;
+    text-align: center;
+    padding: 1rem;
+}
+
+.itinerary-text {
+    white-space: normal;
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+.itinerary-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.itinerary-meta {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 0.5rem;
+    color: #666;
+}
+
+.meta-item {
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+.itinerary-content-inner {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Markdown styling */
+.itinerary-section {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #3498db;
+}
+
+.itinerary-subsection {
+    color: #34495e;
+    font-size: 1.2rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.itinerary-content-inner ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    list-style-type: none;
+}
+
+.itinerary-content-inner li {
+    position: relative;
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.itinerary-content-inner li:before {
+    content: "•";
+    color: #3498db;
+    font-size: 1.2em;
+    position: absolute;
+    left: 0;
+    top: 0.4rem;
+}
+
+.itinerary-content-inner strong {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Cost estimates styling */
+.cost-estimate {
+    background-color: #f8f9fa;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    margin: 0.5rem 0;
+    color: #2c3e50;
+}
+
+/* Tips and highlights */
+.travel-tip {
+    background-color: #ebf5fb;
+    padding: 1rem;
+    border-left: 4px solid #3498db;
+    margin: 1rem 0;
+    border-radius: 0 4px 4px 0;
+}
+
+/* Disabled button state */
+.submit-btn:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+/* Success state for form inputs */
+input:valid, textarea:valid {
+    border-color: #2ecc71;
+}
+
+/* Loading spinner */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .logo {
+        font-size: 2.5rem;
+    }
+    
+    .travel-form, .itinerary-container {
+        padding: 1.5rem;
+    }
+} 
