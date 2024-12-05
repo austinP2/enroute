@@ -36,4 +36,11 @@ Before running this application, make sure you have:
 
 ## Installation
 
-1. Clone the repository:
+1. Clone the repository
+
+2. Install required dependencies
+
+3. Add your Gemini API key
+
+4. Start the Flask server
+
